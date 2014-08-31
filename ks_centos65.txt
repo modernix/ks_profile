@@ -68,7 +68,7 @@ sed -i 's/^\(Defaults.*requiretty\)/#\1/' /etc/sudoers
 echo "vagrant ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
 
 echo "*	soft	nofile	65535" >> /etc/security/limits.conf
-echo "*	hard	nofile	65535" .. /etc/security/limits.conf
+echo "*	hard	nofile	65535" >> /etc/security/limits.conf
 
 cat << EOF1 > /etc/sysconfig/network-scripts/ifcfg-eth0
 DEVICE=eth0
