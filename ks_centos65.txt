@@ -78,6 +78,8 @@ NM_CONTROLLED=no
 BOOTPROTO=dhcp
 EOF1
 
+echo "kernel.randomize_va_space=0" >> /etc/sysctl.conf
+
 rm -f /etc/udev/rules.d/70-persistent-net.rules
 
 yum clean all
