@@ -41,14 +41,14 @@ curl
 git
 man
 vim
-ntp
+unzip
 %end
 
 %post
-chkconfig ntpd on
-service ntpd stop
-ntpdate time.nist.gov
-service ntpd start
+#chkconfig ntpd on
+#service ntpd stop
+#ntpdate time.nist.gov
+#service ntpd start
 
 chkconfig sshd on
 chkconfig iptables off
